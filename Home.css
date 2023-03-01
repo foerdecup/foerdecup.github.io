@@ -187,48 +187,9 @@ body {
     padding: 30px;
   }
 
-  .u-section-1 .u-countdown-counter-1 {
+  .u-section-1 .u-countdown-counter {
     font-size: 4.5rem;
   }
-
-  .u-section-1 .u-countdown-separator-1 {
-    font-size: 4.5rem;
-  }
-
-  .u-section-1 .u-countdown-counter-2 {
-    font-size: 4.5rem;
-  }
-
-  .u-section-1 .u-countdown-separator-2 {
-    font-size: 4.5rem;
-  }
-
-  .u-section-1 .u-countdown-counter-3 {
-    font-size: 4.5rem;
-  }
-
-  .u-section-1 .u-countdown-separator-3 {
-    font-size: 4.5rem;
-  }
-
-  .u-section-1 .u-countdown-counter-4 {
-    font-size: 4.5rem;
-  }
-
-  .u-section-1 .u-countdown-separator-4 {
-    font-size: 4.5rem;
-  }
-
-  .u-section-1 .u-countdown-counter-5 {
-    font-size: 4.5rem;
-  }
-
-  .u-section-1 .u-countdown-separator-5 {
-    font-size: 4.5rem;
-  }
-
-  .u-section-1 .u-countdown-counter-6 {
-    font-size: 4.5rem;
   }
 }
 
@@ -246,47 +207,7 @@ body {
     padding-right: 20px;
   }
 
-  .u-section-1 .u-countdown-counter-1 {
-    font-size: 3.75rem;
-  }
-
-  .u-section-1 .u-countdown-separator-1 {
-    font-size: 3.75rem;
-  }
-
-  .u-section-1 .u-countdown-counter-2 {
-    font-size: 3.75rem;
-  }
-
-  .u-section-1 .u-countdown-separator-2 {
-    font-size: 3.75rem;
-  }
-
-  .u-section-1 .u-countdown-counter-3 {
-    font-size: 3.75rem;
-  }
-
-  .u-section-1 .u-countdown-separator-3 {
-    font-size: 3.75rem;
-  }
-
-  .u-section-1 .u-countdown-counter-4 {
-    font-size: 3.75rem;
-  }
-
-  .u-section-1 .u-countdown-separator-4 {
-    font-size: 3.75rem;
-  }
-
-  .u-section-1 .u-countdown-counter-5 {
-    font-size: 3.75rem;
-  }
-
-  .u-section-1 .u-countdown-separator-5 {
-    font-size: 3.75rem;
-  }
-
-  .u-section-1 .u-countdown-counter-6 {
+  .u-section-1 .u-countdown-counter {
     font-size: 3.75rem;
   }
 }

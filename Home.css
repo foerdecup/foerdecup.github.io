@@ -41,6 +41,12 @@ body {
   line-height: 1;
   font-weight: 700;
 }
+.u-section-1 .u-countdown-counter-1 {
+  font-size: 6rem;
+  letter-spacing: 2px;
+  line-height: 1;
+  font-weight: 700;
+}
 
 .u-section-1 .u-countdown-label {
   font-weight: 600;

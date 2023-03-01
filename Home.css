@@ -39,7 +39,7 @@ body {
   padding-top: 0;
 }
 
-.u-section-1 .u-countdown-counter-1 {
+.u-section-1 .u-countdown-counter {
   font-size: 6rem;
   letter-spacing: 2px;
   line-height: 1;
@@ -63,13 +63,6 @@ body {
   padding-top: 0;
 }
 
-.u-section-1 .u-countdown-counter-2 {
-  font-size: 6rem;
-  letter-spacing: 2px;
-  line-height: 1;
-  font-weight: 700;
-}
-
 .u-section-1 .u-countdown-label-2 {
   font-weight: 600;
   text-transform: uppercase;
@@ -85,13 +78,6 @@ body {
 
 .u-section-1 .u-countdown-item-3 {
   padding-top: 0;
-}
-
-.u-section-1 .u-countdown-counter-3 {
-  font-size: 6rem;
-  letter-spacing: 2px;
-  line-height: 1;
-  font-weight: 700;
 }
 
 .u-section-1 .u-countdown-label-3 {
@@ -111,13 +97,6 @@ body {
   padding-top: 0;
 }
 
-.u-section-1 .u-countdown-counter-4 {
-  font-size: 6rem;
-  letter-spacing: 2px;
-  line-height: 1;
-  font-weight: 700;
-}
-
 .u-section-1 .u-countdown-label-4 {
   font-weight: 600;
   text-transform: uppercase;
@@ -135,12 +114,6 @@ body {
   padding-top: 0;
 }
 
-.u-section-1 .u-countdown-counter-5 {
-  font-size: 6rem;
-  letter-spacing: 2px;
-  line-height: 1;
-  font-weight: 700;
-}
 
 .u-section-1 .u-countdown-label-5 {
   font-weight: 600;
@@ -157,13 +130,6 @@ body {
 
 .u-section-1 .u-countdown-item-6 {
   padding-top: 0;
-}
-
-.u-section-1 .u-countdown-counter-6 {
-  font-size: 6rem;
-  letter-spacing: 2px;
-  line-height: 1;
-  font-weight: 700;
 }
 
 .u-section-1 .u-countdown-label-6 {

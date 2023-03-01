@@ -55,6 +55,10 @@ body {
   font-weight: 700;
 }
 
+.u-section-1 -u-spacing-15 {
+  margin: 15px;
+}
+
 @media (max-width: 1199px) {
   .u-section-1 .u-group-1 {
     height: auto;

@@ -43,100 +43,47 @@ body {
   font-weight: 500;
 }
 
-.thin {
-  font-weight: 100 !important;
-}
-
 h2{
   font-size: 4rem;
   font-weight: 800;
 }
 
-.u-section-1 .u-icon-1 {
-  width: 64px;
-  height: 64px;
-  margin: 120px auto 0;
-}
-
-.u-section-1 .u-text-1 {
-  font-weight: 700;
-  font-size: 3.75rem;
-  margin: 28px auto 0;
-}
-
-.u-section-1 .u-group-1 {
-  width: 597px;
-  min-height: 197px;
-  height: auto;
-  margin: 95px auto 60px;
-}
-
-.u-section-1 .u-container-layout-1 {
-  padding-left: 0;
-  padding-right: 0;
-}
-
-.u-section-1 .u-countdown-1 {
-  height: 113px;
-  margin: 0 auto;
-}
-
-.u-section-1 .u-countdown-counter {
-  font-size: 6rem;
-  letter-spacing: 2px;
-  line-height: 1;
-  font-weight: 700;
-}
-
-.u-section-1 .u-countdown-label {
-  font-weight: 600;
-  text-transform: uppercase;
-  font-size: 1rem;
-}
-
-.u-section-1 .u-countdown-separator-1 {
-  font-size: 6rem;
-  letter-spacing: 2px;
-  line-height: 1;
-  font-weight: 700;
-}
-
 @media (max-width: 1199px) {
-  .u-section-1 .u-group-1 {
-    height: auto;
+  
+  .countdown-item {
+    font-size: 2rem;
   }
+  
+  .countdown-label {
+    font-size: 1rem;
+  }
+  
+  h2{
+    font-size: 2rem;
+  }
+  
 }
 
 @media (max-width: 767px) {
-  .u-section-1 .u-group-1 {
-    width: 540px;
-  }
-
-  .u-section-1 .u-container-layout-1 {
-    padding: 30px;
-  }
-
-  .u-section-1 .u-countdown-counter {
-    font-size: 4.5rem;
-  }
   }
 
 
 @media (max-width: 575px) {
-  .u-section-1 .u-text-1 {
-    font-size: 1.5rem;
-  }
+  
+.countdown {
+  padding: 0.5em;
+}
 
-  .u-section-1 .u-group-1 {
-    width: 340px;
-  }
+.countdown-item {
+  margin: 5px;
+  font-size: 1.4rem;
+}
 
-  .u-section-1 .u-container-layout-1 {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  .u-section-1 .u-countdown-counter {
-    font-size: 3.75rem;
-  }
+.countdown-label {
+  margin: 2px;
+  font-size: 0.7rem;
+}
+h2{
+  font-size: 1.4rem;
+}
 }

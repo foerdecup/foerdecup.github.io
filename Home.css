@@ -51,15 +51,15 @@ h2{
 @media (max-width: 1199px) {
   
   .countdown-item {
-    font-size: 2rem;
+    font-size: 3rem;
   }
   
   .countdown-label {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
   
   h2{
-    font-size: 2rem;
+    font-size: 3rem;
   }
   
 }
@@ -76,14 +76,14 @@ h2{
 
 .countdown-item {
   margin: 5px;
-  font-size: 1.4rem;
+  font-size: 2rem;
 }
 
 .countdown-label {
   margin: 2px;
-  font-size: 0.7rem;
+  font-size: 1rem;
 }
 h2{
-  font-size: 1.4rem;
+  font-size: 2rem;
 }
 }

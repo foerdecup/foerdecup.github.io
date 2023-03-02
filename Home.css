@@ -55,7 +55,7 @@ h2{
   }
   
   .countdown-label {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
   
   h2{
@@ -80,8 +80,8 @@ h2{
 }
 
 .countdown-label {
-  margin: 2px;
-  font-size: 0.8rem;
+  margin: 5px;
+  font-size: 0.7rem;
 }
 h2{
   font-size: 2rem;

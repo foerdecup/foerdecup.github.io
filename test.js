@@ -37,3 +37,21 @@ var x = setInterval(function() {
     document.getElementById("days").innerHTML = "EXPIRED";
   }
 }, 1000);
+
+function bubbleClick() {
+  document.getElementById('bubbles').src ='img/blubb.svg'; 
+  setTimeout(function() {document.getElementById('bubbles').src='img/empty.svg'; var sleepTimer = Math.random()*15000; setTimeout(newPosition, sleepTimer);},500);
+}
+
+function newPosition() {
+  var xPosition = Math.random()*90;
+  var yPosition = Math.random()*90;
+  document.getElementById('bubbles').style.top = yPosition +5+'vh';
+  document.getElementById('bubbles').style.left = xPosition+5+'%';
+  document.getElementById('bubbles').src ='img/bubbles.svg'; 
+}
+
+function setupBubbles() {
+  var sleepTimer = Math.random()*15000; 
+  setTimeout(newPosition, sleepTimer);
+}

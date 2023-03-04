@@ -15,6 +15,11 @@ body {
   text-align: center;
 }
 
+.bubbles {
+  position: absolute;
+  height: 30px;
+}
+
 .countdown {
   border-style: solid;
   border-width: 2px;

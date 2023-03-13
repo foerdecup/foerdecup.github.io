@@ -5,6 +5,7 @@
     <meta name="keywords" content="Fördecup 2023">
     <title>Fördecup 2023</title>
     <link rel="stylesheet" href="Home.css" media="screen">
+    <link rel="stylesheet" href="menu.css" media="screen">
     <script class="countdown" type="text/javascript" src="test.js" defer=""></script>
     <script src="https://kit.fontawesome.com/f49601e7f1.js" crossorigin="anonymous"></script>
     
@@ -18,8 +19,19 @@
 
   <body data-lang="de" onload="setupBubbles()">
 
+    <div class="navigator"><input id="menu-toggle" type="checkbox" />
+      <label class="menu-btn" for="menu-toggle">
+        <span><i class="fa-solid fa-bars" style="color: #fafafa !important"></i></span>
+      </label>
+  
+      <ul class="menu-box">
+        <li><a class="menu-item" href="index.html">Countdown</a></li>
+        <li><a class="menu-item" href="news.html">Ausschreibung</a></li>
+        <li><a class="menu-item" href="#">News</a></li>
+      </ul>
+    </div>
     <img id="bubbles" class="bubbles" onclick="bubbleClick()">
-    <i class="fa-regular fa-heart thin" style="font-size:60px;color:#ffffff;"></i>
+    <i class="fa-regular fa-heart" style="font-size:60px;color:#ffffff;"></i>
 
     <h2>Fördecup 2023<br></h2>
 

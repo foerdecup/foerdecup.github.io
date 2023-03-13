@@ -1,5 +1,5 @@
 // Set the date we're counting down to
-var countDownDate = new Date("Sat, 27 May 2023 06:00:23 GMT").getTime();
+var countDownDate = new Date("Sat, 01 July 2023 10:00:00 GMT").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -53,5 +53,5 @@ function newPosition() {
 
 function setupBubbles() {
   var sleepTimer = Math.random()*15000; 
-  setTimeout(newPosition, sleepTimer);
+  setTimeout(newPosition, sleepTimer+5000);
 }

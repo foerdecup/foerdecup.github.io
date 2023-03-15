@@ -39,8 +39,10 @@ var x = setInterval(function() {
 }, 1000);
 
 function bubbleClick() {
-  document.getElementById('bubbles').src ='img/blubb.svg'; 
-  setTimeout(function() {document.getElementById('bubbles').src='img/empty.svg'; var sleepTimer = Math.random()*15000; setTimeout(newPosition, sleepTimer);},500);
+  if (document.getElementById('bubbles').src != null && document.getElementById('bubbles').src.match("img/bubbles.svg")) {
+    document.getElementById('bubbles').src ='img/blubb.svg'; 
+    setTimeout(function() {document.getElementById('bubbles').src=''; var sleepTimer = Math.random()*15000; setTimeout(newPosition, sleepTimer);},500);
+  }
 }
 
 function newPosition() {
@@ -52,6 +54,6 @@ function newPosition() {
 }
 
 function setupBubbles() {
-  var sleepTimer = Math.random()*15000; 
+  var sleepTimer = Math.random()*1000; 
   setTimeout(newPosition, sleepTimer+5000);
 }

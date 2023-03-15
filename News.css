@@ -7,7 +7,7 @@ html {
     background: #fafafa;
     color: #222;
     min-height: calc( 50vh );
-    width: max(70%, 500px);    
+    width: min(100%, 1000px);    
     margin-left: auto;
     margin-right: auto;
   }
@@ -16,6 +16,9 @@ h1 {
   padding-top: 200px;
 }
 
+h2 {
+  color: #1b4276;
+}
 
 .header {
   top: 0px;
@@ -32,7 +35,7 @@ h1 {
 }
 
 .header-content {
-  width: max(70%, 500px);   
+  width: min(100%, 1000px);    
   margin-left: auto;
   margin-right: auto;
 }
@@ -41,7 +44,7 @@ h1 {
   margin-left: auto;
   margin-right: auto;
   margin-top: 40px;
-  width: max(70%, 500px);   
+  width: min(100%, 1000px);    
   text-align: center;
   padding: 5px;
   font-weight: bold;
@@ -53,11 +56,106 @@ h1 {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 25px;
-  width: max(70%, 500px);   
+  width: min(100%, 1000px);    
   text-align: center;
   font-size: 25px;  
 }
 
 .test {
   font-size: 20px;
+  margin-top: 600px;
+}
+
+.banner {
+  width: 100%;
+  position: absolute;
+  left: 0px;
+  z-index: -1;
+  top: 170px;
+  height:400px;
+}
+
+.banner-picture {
+  left: auto;
+  right: auto;
+  position: absolute;
+  width: 100%;  
+  border-style: solid;
+  border-width: 2px 0px;
+  border-color: #1b4276;
+  
+  object-fit: none; /* Do not scale the image */
+  object-position: center; /* Center the image within the element */
+}
+
+.banner-item {
+  left: auto;
+  right: auto;
+  top: 84px;
+  width:100%;  
+  position: absolute;
+}
+
+.banner-text{
+  color: #fafafa;
+  text-align: center;
+  font-size: 80px;
+  font-family: "Satisfy";
+  margin: 0px;
+}
+
+.text-1 {
+  margin-right: 250px;
+  text-align: center;
+}
+.text-2 {
+  margin-left: 250px;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .banner-text{
+    font-size: 50px;
+  }
+  .text-1 {
+    margin-right: 150px;
+  }
+  .text-2 {
+    margin-left: 150px;
+  }
+  .banner-item {
+    top: 128px;
+  }
+
+}
+
+@media (max-width: 575px) {
+  .banner-text{
+    font-size: 40px;
+  }
+  .text-1 {
+    margin-right: 0px;
+  }
+  .text-2 {
+    margin-left: 0px;
+  }
+  .banner-item {
+    top: 142px;
+  }
+  .banner {
+    top: 120px;
+  }
+  .headline {
+    font-size: 30px;  
+    margin-top: 20px;
+    padding-bottom: 5px;
+  }
+  .date {
+    font-size: 20px;  
+  }
+  .test {
+    font-size: 15px;
+    margin-top: 550px;
+  }
+
 }

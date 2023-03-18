@@ -3,6 +3,7 @@ var yPosOld = 0;
 let start, length, previousTimeStamp;
 const size = getLength(window.innerWidth, window.innerHeight);
 let myReq; 
+var lastRotate = 0;
 
 function setup_jellyfish() {
   xPosOld = Math.random()*90;
@@ -18,7 +19,9 @@ function jellyfish_step(timestamp) {
     start = timestamp;
     length = getLength(xPosition - xPosOld, yPosition - yPosOld);
     time =  (length * size)/10;
-    document.getElementById('jellyfish').style.rotate = getDegree(0,-1,(xPosition - xPosOld)*window.innerWidth, (yPosition - yPosOld)*window.innerHeight)+'rad';
+    var newRotate = getDegree(0,-1,(xPosition - xPosOld)*window.innerWidth, (yPosition - yPosOld)*window.innerHeight);
+    document.getElementById('jellyfish').style.rotate = newRotate + 'rad';
+    lastRotate = newRotate;
   }
   if(timestamp > start + time){
     xPosOld = xPosition;
@@ -28,7 +31,9 @@ function jellyfish_step(timestamp) {
     start = timestamp;
     length = getLength(xPosition - xPosOld, yPosition - yPosOld);
     time =  length * size /10;
-    document.getElementById('jellyfish').style.rotate = getDegree(0,-1,(xPosition - xPosOld)*window.innerWidth, (yPosition - yPosOld)*window.innerHeight)+'rad';
+    var newRotate = getDegree(0,-1,(xPosition - xPosOld)*window.innerWidth, (yPosition - yPosOld)*window.innerHeight);
+    document.getElementById('jellyfish').style.rotate = newRotate +'rad';
+    lastRotate = newRotate;
   }
   if(timestamp % 1000 > 500) {
     document.getElementById('jellyfish').src = 'img/jellyfish.svg';

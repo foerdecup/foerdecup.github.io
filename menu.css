@@ -58,3 +58,10 @@
   .menu-item:hover {
     background-color: #555555;
   }
+
+  
+@media (max-width: 575px) {
+  .menu-box {
+    width: 100%;
+  }
+}

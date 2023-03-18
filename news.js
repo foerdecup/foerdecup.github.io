@@ -2,7 +2,7 @@ var xPosOld = 0;
 var yPosOld = 0;
 let start, length, previousTimeStamp;
 const size = getLength(window.innerWidth, window.innerHeight);
-
+let myReq; 
 
 function setup_jellyfish() {
   xPosOld = Math.random()*90;
@@ -18,7 +18,7 @@ function jellyfish_step(timestamp) {
     start = timestamp;
     length = getLength(xPosition - xPosOld, yPosition - yPosOld);
     time =  (length * size)/10;
-    document.getElementById('jellyfish').style.rotate = getDegree(0,-1,(xPosition - xPosOld +5)*window.innerWidth, (yPosition - yPosOld+5)*window.innerHeight)+'rad';
+    document.getElementById('jellyfish').style.rotate = getDegree(0,-1,(xPosition - xPosOld)*window.innerWidth, (yPosition - yPosOld)*window.innerHeight)+'rad';
   }
   if(timestamp > start + time){
     xPosOld = xPosition;
@@ -28,7 +28,7 @@ function jellyfish_step(timestamp) {
     start = timestamp;
     length = getLength(xPosition - xPosOld, yPosition - yPosOld);
     time =  length * size /10;
-    document.getElementById('jellyfish').style.rotate = getDegree(0,-1,(xPosition - xPosOld +5)*window.innerWidth, (yPosition - yPosOld+5)*window.innerHeight)+'rad';
+    document.getElementById('jellyfish').style.rotate = getDegree(0,-1,(xPosition - xPosOld)*window.innerWidth, (yPosition - yPosOld)*window.innerHeight)+'rad';
   }
   if(timestamp % 1000 > 500) {
     document.getElementById('jellyfish').src = 'img/jellyfish.svg';
@@ -41,7 +41,7 @@ function jellyfish_step(timestamp) {
   yPosNew = yPosOld + (yPosition - yPosOld)*(elapsed/time);
   document.getElementById('jellyfish').style.top = yPosNew +5+'vh';
   document.getElementById('jellyfish').style.left = xPosNew +5+'%';
-  window.requestAnimationFrame(jellyfish_step);
+  myReq = window.requestAnimationFrame(jellyfish_step);
 }
 
 function getDegree(xOld, yOld, xNew,yNew){
@@ -54,6 +54,11 @@ function getDegree(xOld, yOld, xNew,yNew){
 
 function getLength(a,b) {
     return Math.sqrt(a ** 2 + b ** 2);
+}
+
+function cancelJellyAnimation() {
+    cancelAnimationFrame(myReq);
+    document.getElementById('jellyfish').src = '';
 }
 
 window.requestAnimationFrame(jellyfish_step);

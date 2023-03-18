@@ -17,8 +17,8 @@ function jellyfish_step(timestamp) {
     yPosition = Math.random()*90;
     start = timestamp;
     length = getLength(xPosition - xPosOld, yPosition - yPosOld);
-    time =  (length * size)/30;
-    document.getElementById('jellyfish').style.rotate = Math.random() * 360+'rad';
+    time =  (length * size)/10;
+    document.getElementById('jellyfish').style.rotate = getDegree(0,-1,(xPosition - xPosOld +5)*window.innerWidth, (yPosition - yPosOld+5)*window.innerHeight)+'rad';
   }
   if(timestamp > start + time){
     xPosOld = xPosition;
@@ -27,7 +27,7 @@ function jellyfish_step(timestamp) {
     yPosition = Math.random()*90;
     start = timestamp;
     length = getLength(xPosition - xPosOld, yPosition - yPosOld);
-    time =  length * size /30;
+    time =  length * size /10;
     document.getElementById('jellyfish').style.rotate = getDegree(0,-1,(xPosition - xPosOld +5)*window.innerWidth, (yPosition - yPosOld+5)*window.innerHeight)+'rad';
   }
   elapsed = timestamp - start;

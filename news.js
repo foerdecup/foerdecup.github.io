@@ -30,6 +30,12 @@ function jellyfish_step(timestamp) {
     time =  length * size /10;
     document.getElementById('jellyfish').style.rotate = getDegree(0,-1,(xPosition - xPosOld +5)*window.innerWidth, (yPosition - yPosOld+5)*window.innerHeight)+'rad';
   }
+  if(timestamp % 1000 > 500) {
+    document.getElementById('jellyfish').src = 'img/jellyfish.svg';
+  }
+  if(timestamp % 1000 < 500) {
+    document.getElementById('jellyfish').src = 'img/jellyfish_1.svg';
+  }
   elapsed = timestamp - start;
   xPosNew = xPosOld + (xPosition - xPosOld)*(elapsed/time);
   yPosNew = yPosOld + (yPosition - yPosOld)*(elapsed/time);

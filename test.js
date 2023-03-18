@@ -54,6 +54,6 @@ function newPosition() {
 }
 
 function setupBubbles() {
-  var sleepTimer = Math.random()*1000; 
+  var sleepTimer = Math.random()*10000; 
   setTimeout(newPosition, sleepTimer+5000);
 }

@@ -113,6 +113,12 @@ h2 {
   text-align: center;
 }
 
+.jellyfish {
+  position: absolute;
+  height: 50px;
+  rotate: 30deg;
+}
+
 @media (max-width: 900px) {
   .banner-text{
     font-size: 50px;

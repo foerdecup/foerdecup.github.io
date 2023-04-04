@@ -1,0 +1,58 @@
+html {
+    font-family: sans-serif;
+    font-family: "Optima";
+    font-family: "Lato";
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    background: #fafafa;
+    color: #222;
+    min-height: calc( 50vh );
+    width: min(100%, 1000px);    
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+.table-results {
+    overflow: hidden;
+    border-collapse: collapse;
+}
+
+.table-head {
+    width: 100%;
+}
+
+.table-head th {
+    color: #537cb4;
+    font-family: Lato-Bold;
+    font-family: sans-serif;
+    padding: 18px 10px;
+    text-align: left;
+}
+
+.table-head thead {
+    border-bottom: 2px solid #e2e2e2;
+}
+
+.team-name {
+    min-width: 20%;
+}
+
+.table-num {
+    min-width: 5%;
+}
+
+.table-row  {
+    border-bottom: 1px solid #e2e2e2;
+    box-sizing: border-box;
+    border-collapse: collapse;
+}
+
+.table-row td {    
+    padding: 18px 10px;
+    text-align: left;
+}
+
+table, th, td {
+    border-collapse: collapse;
+  }

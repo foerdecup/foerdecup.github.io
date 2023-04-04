@@ -18,6 +18,7 @@ h1 {
 
 h2 {
   color: #1b4276;
+  font-size: 2rem;
 }
 
 .header {
@@ -114,9 +115,13 @@ h2 {
 }
 
 .jellyfish {
-  position: absolute;
+  position: fixed;
   height: 50px;
   rotate: 30deg;
+}
+
+th, td{
+  text-align: center !important;
 }
 
 @media (max-width: 900px) {

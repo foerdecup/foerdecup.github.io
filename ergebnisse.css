@@ -13,6 +13,13 @@ html {
   }
 
 
+.oracle {
+    color: #1b4276;
+    font-size: 1.7rem;
+    font-weight: bold;
+    text-align: center;
+}
+
 .table-results {
     overflow: hidden;
     border-collapse: collapse;
@@ -51,6 +58,10 @@ html {
 .table-row td {    
     padding: 18px 10px;
     text-align: left;
+}
+
+.results {
+    visibility:hidden;
 }
 
 table, th, td {

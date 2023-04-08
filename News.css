@@ -21,6 +21,16 @@ h2 {
   font-size: 2rem;
 }
 
+a {
+  color: #1b4276;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #537cb4;
+  text-decoration: none;
+}
+
 .header {
   top: 0px;
   left: 0px;
@@ -124,6 +134,44 @@ th, td{
   text-align: center !important;
 }
 
+div.card-box {
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-columns: auto auto;
+}
+
+div.cards {  
+  background-color: #fafafa;
+  color: #222;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 0px 15px 20px;
+}
+
+.cards img {
+  aspect-ratio: 3 / 2;
+}
+
+div.container {
+  text-align: center;
+  padding: 5px 10px;
+}
+
+.gif1:hover {
+  content: url("img/whale-155_512.gif")
+}
+
+.gif2:hover {
+  content: url("img/whale-155_512.gif")
+}
+
+.gif3:hover {
+  content: url("img/whale-155_512.gif")
+}
+
+.gif4:hover {
+  content: url("img/whale-155_512.gif")
+}
+
 @media (max-width: 900px) {
   .banner-text{
     font-size: 50px;
@@ -137,6 +185,11 @@ th, td{
   .banner-item {
     top: 128px;
   }
+  
+  div.card-box {
+    grid-template-columns: auto;
+  }
+
 
 }
 

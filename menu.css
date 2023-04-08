@@ -55,6 +55,13 @@
     transition-duration: .25s;
   }
   
+  .menu-item a{
+    color: #fafafa !important;
+  }
+  .menu-item a:visited{
+    color: #fafafa !important;
+  }
+
   .menu-item:hover {
     background-color: #555555;
   }

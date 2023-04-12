@@ -148,7 +148,6 @@ div.cards {
 }
 
 .cards img {
-  aspect-ratio: 3 / 2;
 }
 
 div.container {
@@ -157,19 +156,19 @@ div.container {
 }
 
 .gif1:hover {
-  content: url("img/whale-155_512.gif")
+  content: url("img/Grätsche_als_Seestern.gif")
 }
 
 .gif2:hover {
-  content: url("img/whale-155_512.gif")
+  content: url("img/Hocke_als_taucher_final.gif")
 }
 
 .gif3:hover {
-  content: url("img/whale-155_512.gif")
+  content: url("img/Strudel.gif")
 }
 
 .gif4:hover {
-  content: url("img/whale-155_512.gif")
+  content: url("img/Seestern_zum_Bauch.gif")
 }
 
 @media (max-width: 900px) {

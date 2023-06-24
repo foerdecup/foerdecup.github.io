@@ -13,11 +13,71 @@ html {
   }
 
 
+
+  h1 {
+    padding-top: 200px;
+  }
+  
+  h2 {
+    color: #1b4276;
+    font-size: 2rem;
+  }
+  
+  a {
+    color: #1b4276;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: #537cb4;
+    text-decoration: none;
+  }
+
 .oracle {
     color: #1b4276;
     font-size: 1.7rem;
     font-weight: bold;
     text-align: center;
+}
+
+.results-header{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+iframe {
+    display:block; 
+    width: 946px;
+    height: 100vh;
+    border-style:none;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 0 0;
+    background-color: #fafafa;
+}
+
+#meer{
+    height: 600px;
+}
+
+#mehr_meer{
+    height: 720px
+}
+
+#noch_mehr_meer{
+    height: 320px;
+}
+
+#spasskuer{
+    width: 881px;
+    height: 520px;
+}
+
+
+
+iframe {
+    display: block;
+    border-style:none;
 }
 
 .table-results {
@@ -67,3 +127,16 @@ html {
 table, th, td {
     border-collapse: collapse;
   }
+
+
+@media (max-width: 900px) {
+
+    iframe{
+        width: 591px;
+    }
+
+    #spasskuer{
+        width: 591px;
+    }
+
+}

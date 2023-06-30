@@ -47,7 +47,7 @@ html {
 
 iframe {
     display:block; 
-    width: 946px;
+    width: 1027px;
     height: 100vh;
     border-style:none;
     overflow: hidden;
@@ -69,7 +69,7 @@ iframe {
 }
 
 #spasskuer{
-    width: 881px;
+    width: 962px;
     height: 440px;
 }
 
@@ -132,11 +132,11 @@ table, th, td {
 @media (max-width: 900px) {
 
     iframe{
-        width: 591px;
+        width: 652px;
     }
 
     #spasskuer{
-        width: 591px;
+        width: 652px;
     }
 
 }

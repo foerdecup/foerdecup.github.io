@@ -17,7 +17,7 @@ var x = setInterval(function() {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
   // Display the result in the element with id="demo"
-
+  
   if (days<10)
     days = "0"+ days;
   document.getElementById("days").innerHTML = days;
@@ -33,8 +33,10 @@ var x = setInterval(function() {
 
   // If the count down is finished, write some text
   if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("days").innerHTML = "EXPIRED";
+    document.getElementById("days").innerHTML = "??";
+    document.getElementById("hours").innerHTML = "??";
+    document.getElementById("minutes").innerHTML = "??";
+    document.getElementById("seconds").innerHTML = "??";
   }
 }, 1000);
 

@@ -67,13 +67,3 @@ function cancelJellyAnimation() {
 }
 
 window.requestAnimationFrame(jellyfish_step);
-
-
-function clickedcurser() {
-  var elementToChange = document.getElementsByTagName("body")[0];
-  elementToChange.style.cursor = "url('img/wand-32.png'),url('img/wand_clicked.png'), auto";
-}
-function unclickcurser() {
-  var elementToChange = document.getElementsByTagName("body")[0];
-  elementToChange.style.cursor = "url('img/un-wand-32.png'),url('img/wand_unclicked.png'), auto";
-}

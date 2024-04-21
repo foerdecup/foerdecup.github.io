@@ -41,9 +41,9 @@ var x = setInterval(function() {
 }, 1000);
 
 function bubbleClick() {
-  if (document.getElementById('bubbles').src != null && document.getElementById('bubbles').src.match("img/bubbles.svg")) {
-    document.getElementById('bubbles').src ='img/blubb.svg'; 
-    setTimeout(function() {document.getElementById('bubbles').src=''; var sleepTimer = Math.random()*15000; setTimeout(newPosition, sleepTimer);},500);
+  if (document.getElementById('bubbles').value != null && document.getElementById('bubbles').value == '') {
+    document.getElementById('bubbles').value ='img/blubb.svg'; 
+    setTimeout(function() {document.getElementById('bubbles').value=''; var sleepTimer = Math.random()*15000; setTimeout(newPosition, sleepTimer);},500);
   }
 }
 
@@ -52,10 +52,19 @@ function newPosition() {
   var yPosition = Math.random()*90;
   document.getElementById('bubbles').style.top = yPosition +5+'vh';
   document.getElementById('bubbles').style.left = xPosition+5+'%';
-  document.getElementById('bubbles').src ='img/bubbles.svg'; 
+  document.getElementById('bubbles').value ='img/bubbles.svg'; 
 }
 
 function setupBubbles() {
   var sleepTimer = Math.random()*10000; 
   setTimeout(newPosition, sleepTimer+5000);
+}
+
+function clickedcurser() {
+  var elementToChange = document.getElementsByTagName("body")[0];
+  elementToChange.style.cursor = "url('img/wand.png'),url('img/wand-32.png'),url('img/wand_clicked.png'), auto";
+}
+function unclickcurser() {
+  var elementToChange = document.getElementsByTagName("body")[0];
+  elementToChange.style.cursor = "url('img/un-wand.png'),url('img/un-wand-32.png'),url('img/wand_unclicked.png'), auto";
 }

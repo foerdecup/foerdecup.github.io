@@ -4,8 +4,13 @@ html {
   font-family: "Lato";
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  background-image: linear-gradient(#62d3c4, #002ed4);
+  background-image: linear-gradient(#BBA9EF, #4320AC);
   min-height: calc( 100vh );
+}
+
+  
+html, body {
+  cursor: url('img/un-wand.png'),url('img/un-wand-32.png'), url('img/wand_unclicked.png'), auto;
 }
 
 body {

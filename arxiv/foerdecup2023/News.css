@@ -10,30 +10,24 @@ html {
     width: min(100%, 1000px);    
     margin-left: auto;
     margin-right: auto;
-  }  
-
-html, body, a {
-  cursor: url('img/un-wand-32.png'), pointer;
-}
-
-
+  }
 
 h1 {
   padding-top: 200px;
 }
 
 h2 {
-  color: #4320AC;
+  color: #1b4276;
   font-size: 2rem;
 }
 
 a {
-  color: #4320AC;
+  color: #1b4276;
   text-decoration: none;
 }
 
 a:visited {
-  color: #8465E2;
+  color: #537cb4;
   text-decoration: none;
 }
 
@@ -99,7 +93,7 @@ a:visited {
   width: 100%;  
   border-style: solid;
   border-width: 2px 0px;
-  border-color: #4320AC;
+  border-color: #1b4276;
   
   object-fit: none; /* Do not scale the image */
   object-position: center; /* Center the image within the element */
@@ -108,7 +102,7 @@ a:visited {
 .banner-item {
   left: auto;
   right: auto;
-  top: 50px;
+  top: 84px;
   width:100%;  
   position: absolute;
 }
@@ -122,14 +116,12 @@ a:visited {
 }
 
 .text-1 {
-  margin-right: 570px;
+  margin-right: 250px;
   text-align: center;
 }
 .text-2 {
-  margin-right: 170px;
-  margin-top: 100pt;
-  text-align: right;
-  font-size: 40pt;
+  margin-left: 250px;
+  text-align: center;
 }
 
 .jellyfish {
@@ -161,6 +153,21 @@ div.container {
   padding: 5px 10px;
 }
 
+.gif1:hover {
+  content: url("img/Grätsche_als_Seestern.gif")
+}
+
+.gif2:hover {
+  content: url("img/Hocke_als_taucher_final.gif")
+}
+
+.gif3:hover {
+  content: url("img/Strudel.gif")
+}
+
+.gif4:hover {
+  content: url("img/Seestern_zum_Bauch.gif")
+}
 
 @media (max-width: 900px) {
   .banner-text{

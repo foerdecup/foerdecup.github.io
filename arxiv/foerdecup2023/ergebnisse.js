@@ -29,12 +29,5 @@ if (window.matchMedia("(max-width: 900px)").matches) {
 }
 
 
-function clickedcurser() {
-    var elementToChange = document.getElementsByTagName("body")[0];
-    elementToChange.style.cursor = "url('img/wand-32.png'),url('img/wand_clicked.png'), auto";
-  }
-  function unclickcurser() {
-    var elementToChange = document.getElementsByTagName("body")[0];
-    elementToChange.style.cursor = "url('img/un-wand-32.png'),url('img/wand_unclicked.png'), auto";
-  }
+
 

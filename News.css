@@ -108,29 +108,29 @@ a:visited {
 .banner-item {
   left: auto;
   right: auto;
-  top: 50px;
+  top: 130px;
   width:100%;  
   position: absolute;
+  text-align: center;
 }
 
 .banner-text{
   color: #fafafa;
-  text-align: center;
-  font-size: 60px;
+  font-size: 40pt;
   font-family: "Satisfy";
+  text-align: center;
   margin: 0px;
+  margin-top: 200px;
 }
 
 .text-1 {
-  margin-right: 570px;
-  margin-top: 200px;
-  text-align: center;
+  margin-left: 140pt;
+  text-align: left;
 }
 .text-2 {
-  margin-right: 18%;
-  margin-top: 100pt;
-  text-align: right;
-  font-size: 30pt;
+  margin-left: 100pt;
+  text-align: left;
+  font-size: 40pt;
 }
 
 .jellyfish {

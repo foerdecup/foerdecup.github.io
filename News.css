@@ -116,20 +116,21 @@ a:visited {
 .banner-text{
   color: #fafafa;
   text-align: center;
-  font-size: 80px;
+  font-size: 60px;
   font-family: "Satisfy";
   margin: 0px;
 }
 
 .text-1 {
   margin-right: 570px;
+  margin-top: 200px;
   text-align: center;
 }
 .text-2 {
-  margin-right: 170px;
+  margin-right: 15%;
   margin-top: 100pt;
   text-align: right;
-  font-size: 40pt;
+  font-size: 30pt;
 }
 
 .jellyfish {

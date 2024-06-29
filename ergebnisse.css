@@ -4,7 +4,7 @@ html {
     font-family: "Lato";
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
-    background: #fafafa;
+    background: #fff;
     color: #222;
     min-height: calc( 50vh );
     width: min(100%, 1000px);    
@@ -47,7 +47,7 @@ html {
 
 iframe {
     display:block; 
-    width: 1027px;
+    width: 910px;
     height: 100vh;
     border-style:none;
     overflow: hidden;
@@ -57,20 +57,21 @@ iframe {
 }
 
 #meer{
-    height: 600px;
+    height: 1030px;
 }
 
 #mehr_meer{
-    height: 735px
+    height: 915px
 }
 
 #noch_mehr_meer{
-    height: 350px;
+    height: 470px;
 }
 
 #spasskuer{
-    width: 962px;
-    height: 458px;
+    width: 1112px;
+    height: 290px;
+    margin-bottom: 50px;
 }
 
 

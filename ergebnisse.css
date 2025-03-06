@@ -19,22 +19,22 @@ html {
   }
   
   h2 {
-    color: #4320AC;
+    color: #F47B20;
     font-size: 2rem;
   }
   
   a {
-    color: #4320AC;
+    color: #F47B20;
     text-decoration: none;
   }
   
   a:visited {
-    color: #8465E2;
+    color: #FDC090;
     text-decoration: none;
   }
 
 .oracle {
-    color: #4320AC;
+    color: #F47B20;
     font-size: 1.7rem;
     font-weight: bold;
     text-align: center;
@@ -91,7 +91,7 @@ iframe {
 }
 
 .table-head th {
-    color: #8465E2;
+    color: #FDC090;
     font-family: Lato-Bold;
     font-family: sans-serif;
     padding: 18px 10px;

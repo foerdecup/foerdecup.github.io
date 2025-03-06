@@ -23,17 +23,17 @@ h1 {
 }
 
 h2 {
-  color: #4320AC;
+  color: #F47B20;
   font-size: 2rem;
 }
 
 a {
-  color: #4320AC;
+  color: #F47B20;
   text-decoration: none;
 }
 
 a:visited {
-  color: #8465E2;
+  color: #FDC090;
   text-decoration: none;
 }
 
@@ -99,7 +99,7 @@ a:visited {
   width: 100%;  
   border-style: solid;
   border-width: 2px 0px;
-  border-color: #4320AC;
+  border-color: #F47B20;
   
   object-fit: cover; /* Do not scale the image */
   object-position: center; /* Center the image within the element */

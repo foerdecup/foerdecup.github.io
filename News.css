@@ -133,10 +133,9 @@ a:visited {
   font-size: 40pt;
 }
 
-.jellyfish {
+.boat {
   position: fixed;
   height: 50px;
-  rotate: 30deg;
 }
 
 th, td{

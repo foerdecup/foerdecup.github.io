@@ -1,52 +1,52 @@
-var xPosOld = 0;
+var xPosOld = 90;
 var yPosOld = 0;
 let start, length, previousTimeStamp;
 const size = getLength(window.innerWidth, window.innerHeight);
 let myReq; 
 var lastRotate = 0;
 
-function setup_jellyfish() {
-  xPosOld = Math.random()*90;
+function setup_boat() {
+  xPosOld = 90 - xPosOld;
   yPosOld = Math.random()*90;
-  document.getElementById('jellyfish').style.top = xPosOld +5+'vh';
-  document.getElementById('jellyfish').style.left = yPosOld +5+'%';
+  document.getElementById('boat').style.top = xPosOld +5+'vh';
+  document.getElementById('boat').style.left = yPosOld +5+'%';
 }
 
-function jellyfish_step(timestamp) {
+function boat_step(timestamp) {
   if(start === undefined){
-    xPosition = Math.random()*90;
+    xPosition = 0;
     yPosition = Math.random()*90;
     start = timestamp;
     length = getLength(xPosition - xPosOld, yPosition - yPosOld);
     time =  (length * size)/10;
-    var newRotate = getDegree(0,-1,(xPosition - xPosOld)*window.innerWidth, (yPosition - yPosOld)*window.innerHeight);
-    document.getElementById('jellyfish').style.rotate = newRotate + 'rad';
-    lastRotate = newRotate;
+    //var newRotate = getDegree(0,-1,(xPosition - xPosOld)*window.innerWidth, (yPosition - yPosOld)*window.innerHeight);
+    //document.getElementById('boat').style.rotate = newRotate + 'rad';
+    //lastRotate = newRotate;
   }
   if(timestamp > start + time){
     xPosOld = xPosition;
     yPosOld = yPosition;
-    xPosition = Math.random()*90;
+    xPosition = 90 - xPosOld;
     yPosition = Math.random()*90;
     start = timestamp;
     length = getLength(xPosition - xPosOld, yPosition - yPosOld);
     time =  length * size /10;
-    var newRotate = getDegree(0,-1,(xPosition - xPosOld)*window.innerWidth, (yPosition - yPosOld)*window.innerHeight);
-    document.getElementById('jellyfish').style.rotate = newRotate +'rad';
-    lastRotate = newRotate;
+    //var newRotate = getDegree(0,-1,(xPosition - xPosOld)*window.innerWidth, (yPosition - yPosOld)*window.innerHeight);
+    //document.getElementById('boat').style.rotate = newRotate +'rad';
+    //lastRotate = newRotate;
   }
   if(timestamp % 1000 > 500) {
-    document.getElementById('jellyfish').src = 'img/jellyfish.svg';
+    document.getElementById('boat').src = 'img/boat.png';
   }
   if(timestamp % 1000 < 500) {
-    document.getElementById('jellyfish').src = 'img/jellyfish_1.svg';
+    document.getElementById('boat').src = 'img/boat.png';
   }
   elapsed = timestamp - start;
   xPosNew = xPosOld + (xPosition - xPosOld)*(elapsed/time);
   yPosNew = yPosOld + (yPosition - yPosOld)*(elapsed/time);
-  document.getElementById('jellyfish').style.top = yPosNew +5+'vh';
-  document.getElementById('jellyfish').style.left = xPosNew +5+'%';
-  myReq = window.requestAnimationFrame(jellyfish_step);
+  document.getElementById('boat').style.top = yPosNew +5+'vh';
+  document.getElementById('boat').style.left = xPosNew +5+'%';
+  myReq = window.requestAnimationFrame(boat_step);
 }
 
 function getDegree(xOld, yOld, xNew,yNew){
@@ -61,12 +61,12 @@ function getLength(a,b) {
     return Math.sqrt(a ** 2 + b ** 2);
 }
 
-function cancelJellyAnimation() {
+function cancelBoatAnimation() {
     cancelAnimationFrame(myReq);
-    document.getElementById('jellyfish').src = '';
+    document.getElementById('boat').src = '';
 }
 
-window.requestAnimationFrame(jellyfish_step);
+window.requestAnimationFrame(boat_step);
 
 
 function clickedcurser() {

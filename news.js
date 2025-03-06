@@ -6,7 +6,7 @@ let myReq;
 var lastRotate = 0;
 
 function setup_boat() {
-  xPosOld = 90 - xPosOld;
+  xPosOld = 0;
   yPosOld = Math.random()*90;
   document.getElementById('boat').style.top = xPosOld +5+'vh';
   document.getElementById('boat').style.left = yPosOld +5+'%';
@@ -14,7 +14,7 @@ function setup_boat() {
 
 function boat_step(timestamp) {
   if(start === undefined){
-    xPosition = 0;
+    xPosition = 90;
     yPosition = Math.random()*90;
     start = timestamp;
     length = getLength(xPosition - xPosOld, yPosition - yPosOld);
@@ -31,15 +31,15 @@ function boat_step(timestamp) {
     start = timestamp;
     length = getLength(xPosition - xPosOld, yPosition - yPosOld);
     time =  length * size /10;
+    if(xPosOld > xPosition){
+      document.getElementById('boat').src = 'img/boat_1.png';
+    }
+    else {
+      document.getElementById('boat').src = 'img/boat.png';
+    }
     //var newRotate = getDegree(0,-1,(xPosition - xPosOld)*window.innerWidth, (yPosition - yPosOld)*window.innerHeight);
     //document.getElementById('boat').style.rotate = newRotate +'rad';
     //lastRotate = newRotate;
-  }
-  if(timestamp % 1000 > 500) {
-    document.getElementById('boat').src = 'img/boat.png';
-  }
-  if(timestamp % 1000 < 500) {
-    document.getElementById('boat').src = 'img/boat.png';
   }
   elapsed = timestamp - start;
   xPosNew = xPosOld + (xPosition - xPosOld)*(elapsed/time);

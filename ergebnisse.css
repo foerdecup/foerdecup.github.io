@@ -140,4 +140,8 @@ table, th, td {
         width: 652px;
     }
 
+    .table-results {
+        font-size: smaller;
+    }
+
 }

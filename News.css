@@ -7,16 +7,11 @@ html {
     background: #fafafa;
     color: #222;
     min-height: calc( 50vh );
-    width: min(100%, 1000px);    
-    margin-left: auto;
-    margin-right: auto;
   }  
 
 html, body, a {
-  cursor: url('img/un-wand-32.png'), pointer;
+  cursor: auto;
 }
-
-
 
 h1 {
   padding-top: 200px;
@@ -61,7 +56,6 @@ a:visited {
   margin-left: auto;
   margin-right: auto;
   margin-top: 40px;
-  width: min(100%, 1000px);    
   text-align: center;
   padding: 5px;
   font-weight: bold;
@@ -72,30 +66,28 @@ a:visited {
 .date {
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 25px;
-  width: min(100%, 1000px);    
+  margin-bottom: 25px; 
   text-align: center;
   font-size: 25px;  
 }
 
 .test {
   font-size: 20px;
-  margin-top: 200px;
+  width: min(100%, 1000px);    
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .banner {
-  width: 100%;
-  position: absolute;
-  left: 0px;
+  width: 102%;
+  margin-left: -1%;
   z-index: -1;
-  top: 170px;
-  height:400px;
+  margin-top: 150px;
 }
 
 .banner-picture {
   left: auto;
   right: auto;
-  position: absolute;
   width: 100%;  
   border-style: solid;
   border-width: 2px 0px;
@@ -161,10 +153,38 @@ div.container {
   padding: 5px 10px;
 }
 
+.gif1:hover {
+  content: url("img/skifahrer.gif")
+}
+
+.gif2:hover {
+  content: url("img/fallschirmspringer.gif")
+}
+
+.gif3:hover {
+  content: url("img/strandkrabbe.gif")
+}
+
+.gif4:hover {
+  content: url("img/fisch.gif")
+}
+
+.gif5:hover {
+  content: url("img/surfer.gif")
+}
+
+.gif6:hover {
+  content: url("img/seestern.gif")
+}
+
 
 @media (max-width: 900px) {
   .banner-text{
     font-size: 50px;
+  }
+  .banner {    
+  width: 104%;
+  margin-left: -2%;
   }
   .text-1 {
     margin-right: 150px;
@@ -184,12 +204,6 @@ div.container {
 }
 
 @media (max-width: 575px) {
-  .banner-text{
-    font-size: 40px;
-  }
-  .banner-picture{
-    height: 300px !important;
-  }
   .text-1 {
     margin-right: 0px;
   }
@@ -200,7 +214,7 @@ div.container {
     top: 92px;
   }
   .banner {
-    top: 120px;
+    margin-top: 110px;
   }
   .headline {
     font-size: 30px;  
@@ -212,7 +226,6 @@ div.container {
   }
   .test {
     font-size: 15px;
-    margin-top: 450px;
   }
   .heart {
     font-size:0px !important; 

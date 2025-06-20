@@ -59,20 +59,24 @@ iframe {
 }
 
 #meer{
-    height: 1190px;
+    height: 590px;
 }
 
 #mehr_meer{
-    height: 815px
+    height: 855px
 }
 
 #noch_mehr_meer{
-    height: 470px;
+    height: 790px;
+}
+
+#pflicht4{
+    height: 260px;
 }
 
 #spasskuer{
     width: 1112px;
-    height: 290px;
+    height: 260px;
     margin-bottom: 50px;
 }
 

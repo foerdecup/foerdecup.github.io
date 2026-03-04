@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="de"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="Fördecup 2025">
+    <title>Ausschreibung und News</title>
+    <link rel="stylesheet" href="menu.css" media="screen">
+    <link rel="stylesheet" href="ergebnisse.css" media="screen">
+    <link rel="stylesheet" href="News.css" media="screen">
+    <link rel="stylesheet" href="../../header.css" media="screen">
+    <link rel="stylesheet" href="../../menu.css" media="screen">
+    <script class="countdown" type="text/javascript" src="news.js" defer=""></script>
+    <script src="https://kit.fontawesome.com/f49601e7f1.js" crossorigin="anonymous"></script>
+    
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@800;1000&display=swap" rel="stylesheet"> 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet"> 
+    <meta property="og:title" content="Countdown">
+    <meta property="og:type" content="website"></head>
+
+  <body data-lang="de" onload="setup_boat();" onmousedown="clickedcurser();" onmouseup="unclickcurser()">
+
+    <div class="header">
+     
+    <div class="header-content">
+        <div class="headline"><i class="fa-regular fa-heart heart" style="font-size:35px; margin-right:20px;"></i>Fördecup 2025<i class="fa-regular fa-heart heart" style="font-size:35px; margin-left:20px;"></i></div>
+        <div class="date">20. Juni - 22. Juni</div>
+    </div>
+   </div>
+
+   <div class="navigator"><input id="menu-toggle" type="checkbox" />
+    <label class="menu-btn" for="menu-toggle">
+      <span><i class="fa-solid fa-bars"></i></span>
+    </label>
+
+    <ul class="menu-box">
+      <li><a class="menu-item" href="../../index.html">Countdown</a></li>
+      <li><a class="menu-item" href="news.html">Ausschreibung</a></li>
+      <li><a class="menu-item" href="ergebnisse.html">Ergebnisse</a></li>
+      <li><a class="menu-item" href="../../arxiv.html">Archiv</a></li>
+    </ul>
+  </div>
+  <img id="boat" class="boat" src="img/boat.png" onclick="cancelBoatAnimation()">
+
+  <div class="banner">
+    <img class="banner-picture" src="img/Förde Cup Banner Website.png">
+    <div class="banner-item">
+  </div></div>
+
+   <div class="test">
+    <p>Danke für eure Unterstützung! Hier findet ihr die <a href="Helfer Anweisungen.pdf" >Helfer Anweisungen</a>.</p>
+        
+    <p>Hier geht's zur <a href="FördeCup Ausschreibung 2025.pdf">Ausschreibung</a> und zum <a href="Awareness Konzept.pdf">Awareness Konzept</a>. </p>
+    <!--<p>Die Anmeldung erfolgt über den <a href="https://server.sportzentrum.uni-kiel.de/angebote/aktueller_zeitraum/_Trampolinturnen_Foerde_Cup_2024.html">Hochschulsport der Uni Kiel</a>.</p>-->
+
+    <h2>Vorläufiger Zeitplan</h2>
+    <b>Wichtig: </b> Der Plan bietet nur Richtwerte für die Uhrzeiten und kann sich je nach Ablauf noch ändern.
+    <ul>
+      <li>
+        Freitag
+        <ul>
+          <li>ab 14:00 Uhr: Anreise, Meldung, Zelte aufbauen</li>
+          <li>ab 16:00 Uhr: Aufbau Halle</li>
+          <li>ca. 16:30 - 22:00 Uhr: Einturnen</li>
+        </ul>
+      </li>
+      <li>
+        Samstag
+        <ul>
+          <li>7:30 - 10:00 Uhr: Einturnen</li>
+          <li>8:00 - 9:30 Uhr: Frühstück</li>
+          <li>9:30 Uhr: Kampfrichterbesprechung</li>
+          <li>10:00 - 13:00 Uhr: Pflichten 4-er Synchron</li>
+          <li>13:00 - 14:00 Uhr: Pause</li>            
+          <li>14:00 - 16:30 Uhr: Spaßküren</li>        
+          <li>16:30 - 17:00 Uhr: Abbau Halle</li>
+          <li>ab 17:15 Uhr: Siegerehrung & Aktivenbesprechung </li>
+          <li>im Anschluss: Schaumparty</li>
+          <li>Ab 20:00 - 22:00 Uhr: Abendessen</li>
+          <li>im Anschluss: OpenAir Party</li>
+        </ul>
+      </li>
+      <li>
+        Sonntag
+        <ul>
+          <li>8:00 - 9:30 Uhr: Schwimmspaß</li>
+          <li>8:00 - 10:00 Uhr: Frühstück & Aufräumen</li>
+          <li>im Anschluss: Heimreise</li>
+        </ul>
+      </li>
+
+    </ul>
+
+    <h2>Pflichtübungen</h2>
+    <div class = "table-results">
+      <div class="table-head">
+        <table>
+            <thead>
+                <tr>
+                    <th class="table-num">Strandurlaub</th>
+                    <th class="table-num">City Trip</th>
+                    <th class="table-num">Backpacking</th>
+                    <th class="table-num">Abenteuer Wildnis</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="table-row">
+                    <td>Grätsche</td>
+                    <td>Fallschirmspringer i.d. Bauch</td>
+                    <td>3/4 Rück</td>
+                    <td>Doppel/Fliffis</td>
+                </tr>
+                <tr class="table-row">
+                    <td>Sitz</td>
+                    <td>Stand</td>
+                    <td>Rücken</td>
+                    <td>Grätsche</td>
+                </tr>
+                <tr class="table-row">
+                    <td>1/2 Sitz</td>
+                    <td>Strandkrabbe</td>
+                    <td>Muffel</td>
+                    <td>Barani a</td>
+                </tr>
+                <tr class="table-row">
+                    <td>1/2 Stand</td>
+                    <td>Sitz</td>
+                    <td>Grätsche</td>
+                    <td>Salto c Seestern</td>
+                </tr>
+                <tr class="table-row">
+                    <td>Hocke (Skifahrer)</td>
+                    <td>1/2 Rücken</td>
+                    <td>Salto c</td>
+                    <td>3/4 vor</td>
+                </tr>
+                <tr class="table-row">
+                    <td>1/2 Drehung</td>
+                    <td>Muffel/(Stand)*</td>
+                    <td>Fisch</td>
+                    <td>Babyfliffis c</td>
+                </tr>
+                <tr class="table-row">
+                    <td>Bücke</td>
+                    <td>Bücke</td>
+                    <td>Hocke</td>
+                    <td>Hocke</td>
+                </tr>
+                <tr class="table-row">
+                    <td>Sitz</td>
+                    <td>1/1 Drehung</td>
+                    <td>3/4 vor</td>
+                    <td>Barani i.d. Rücken</td>
+                </tr>
+                <tr class="table-row">
+                    <td>Bauch</td>
+                    <td>Hocke</td>
+                    <td>Babyfliffis c /(halbe Stand)*</td>
+                    <td>Muffel i.d. Bauch</td>
+                </tr>
+                <tr class="table-row">
+                    <td>Stand</td>
+                    <td>Salto c</td>
+                    <td>Surfer</td>
+                    <td>Cody c</td>
+                </tr>
+            </tbody>
+        </table>
+      </div>
+      *führt nicht zum Abbruch, pro Springer mit leichterem Sprung werden 0,5 Punkte abgezogen, Quartette müssen sich auf eine Ausführung einigen <br>
+      </div>
+
+      <h2> Sprungklärungen</h2>
+      <p>Hier könnt ihr euch anschauen, wie die kreativeren Sprüngen aussehen sollen (hovern spielt das gif ab).  </p>
+
+      <div class="card-box">
+        <div class="cards">
+          <img class="gif gif1" src="img/skifahrer.jpg" style="width:100%">
+          <div class="container">
+            <p>Hocke als Skifahrer</p>
+          </div>
+        </div>
+        <div class="cards">
+          <img class="gif gif2" src="img/fallschirmspringer.jpg" style="width:100%">
+          <div class="container">
+            <p>Fallschirmspringer i.d. Bauch</p>
+          </div>
+        </div>
+        <div class="cards">
+          <img class="gif gif3" src="img/strandkrabbe.jpg" style="width:100%">
+          <div class="container">
+            <p>Strandkrabbe</p>
+          </div>
+        </div>
+        <div class="cards">
+          <img class="gif gif4" src="img/fisch.jpg" style="width:100%">
+          <div class="container">
+            <p>Fisch</p>
+          </div>
+        </div>
+        <div class="cards">
+           <img class="gif gif5" src="img/surfer.jpg" style="width:100%">
+           <div class="container">
+             <p>Surfer</p>
+         </div>
+        </div>
+         <div class="cards">
+           <img class="gif gif6" src="img/seestern.jpg" style="width:100%">
+           <div class="container">
+             <p>Salto c als Seestern</p>
+         </div>
+        </div>
+      </div>
+      
+
+      <h2>T-Shirts</h2>
+      <div>
+        Sind wir mal ehrlich: Die Event-Shirts stapeln sich in den Schränken. So oft zum Sport kann man gar nicht gehen, um alle regelmäßig zu tragen.
+        Deswegen unser Ansporn dieses Jahr: ein Event-Shirt, das so unauffällig ist, dass man es auch im Alltag tragen möchte.
+        Ohne Schnickschnack, nachhaltig (100 % Bio-Baumwolle) und unisex (seit wann haben Kleidungsstücke denn eigentlich Geschlechter?) – mit einem Design, das Fashion-Labels neidisch werden lässt.<br>
+
+        Die Bestellung ist ausschließlich über die Meldung im HSP-Portal möglich und muss zusätzlich gebündelt per Umfrage bis zum 18.05.2025 bei uns eingegangen sein. 
+        Die Kosten pro T-Shirt belaufen sich voraussichtlich auf 16 €. Das nachstehende T-Shirt dient als erster Entwurf und kann in der finalen Umsetzung sowohl in Farbe als auch im Motiv abweichen.<br>
+
+        Die Shrts gibt es in den Unisex-Größen XXS-5XL.
+
+      <p><img src="img/shirts.png" style="width:100%"></p>
+      </div>
+
+    
+   </div>
+
+
+  </body></html>

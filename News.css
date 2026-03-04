@@ -18,17 +18,17 @@ h1 {
 }
 
 h2 {
-  color: #F47B20;
+  color: rgb(157, 31, 20);
   font-size: 2rem;
 }
 
 a {
-  color: #F47B20;
+  color: rgb(157, 31, 20);
   text-decoration: none;
 }
 
 a:visited {
-  color: #FDC090;
+  color: rgb(157, 31, 20);
   text-decoration: none;
 }
 

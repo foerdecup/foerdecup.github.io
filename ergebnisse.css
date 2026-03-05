@@ -21,12 +21,12 @@ html {
   }
   
   h2 {
-    color: #F47B20;
+    color: rgb(157, 31, 20);
     font-size: 2rem;
   }
   
   a {
-    color: #F47B20;
+    color: rgb(157, 31, 20);
     text-decoration: none;
   }
   
@@ -36,7 +36,7 @@ html {
   }
 
 .oracle {
-    color: #F47B20;
+    color: rgb(157, 31, 20);
     font-size: 1.7rem;
     font-weight: bold;
     text-align: center;

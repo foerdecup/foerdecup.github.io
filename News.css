@@ -234,3 +234,6 @@ div.container {
     margin-right:0px;
    }
 }
+.table-results table thead tr th { 
+  color: rgb(157, 31, 20)
+}

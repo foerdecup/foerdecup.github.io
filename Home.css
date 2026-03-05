@@ -4,7 +4,7 @@ html {
   font-family: "Lato";
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  background-image: linear-gradient(#FDC090, #F47B20);
+  background-image: linear-gradient(rgb(230, 85, 66), rgb(157, 31, 20));
   min-height: calc( 100vh );
 }
 

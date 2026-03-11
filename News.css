@@ -154,27 +154,19 @@ div.container {
 }
 
 .gif1:hover {
-  content: url("img/skifahrer.gif")
+  content: url("img/bond.gif")
 }
 
 .gif2:hover {
-  content: url("img/fallschirmspringer.gif")
+  content: url("img/superman.gif")
 }
 
 .gif3:hover {
-  content: url("img/strandkrabbe.gif")
+  content: url("img/titanic.gif")
 }
 
 .gif4:hover {
-  content: url("img/fisch.gif")
-}
-
-.gif5:hover {
-  content: url("img/surfer.gif")
-}
-
-.gif6:hover {
-  content: url("img/seestern.gif")
+  content: url("img/spiderman.gif")
 }
 
 
